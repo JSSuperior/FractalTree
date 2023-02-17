@@ -32,6 +32,7 @@ public void drawBranches(int x,int y, double branchLength, double angle)
   line(x,y,endX1,endY1);
   line(x,y,endX2,endY2);
   ellipse(endX1,endY1,20,20);
+  ellipse(endX2,endY2,20,20);
   if(branchLength > smallestBranch){ 
     drawBranches(endX1,endY1,branchLength,angle1);
     drawBranches(endX2,endY2,branchLength,angle2);
